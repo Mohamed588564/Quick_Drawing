@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quick Drawer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="1.png"
+      style="border-radius: 500px; border: 1px solid beige"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.29/esri/themes/light/main.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="head">
+      <img src="1.png" alt="M Logo" />
+      <h1>Quick Drawer</h1>
+      <p>Faster Drawing App</p>
+    </header>
+
+    <main id="main">
+      <aside id="tools">
+        <h2>Draw</h2>
+        <button id="draw-point">Draw Point</button>
+        <button id="draw-polyline">Draw Line</button>
+        <button id="draw-polygon">Draw Polygon</button>
+        <div id="color-picker">
+          <label for="color-picker">Drawing Color:</label>
+          <input type="color" id="color-picker" value="#ff0000" />
+        </div>
+        <hr />
+
+        <h2>Edit</h2>
+        <button id="edit-vertices">Edit Vertices</button>
+        <button id="split">Split</button>
+        <button id="merge">Merge</button>
+        <button id="explode">Explode</button>
+        <button id="trim">Trim</button>
+        <hr />
+
+        <h2>Tools</h2>
+        <button id="clear-graphics">Delete All</button>
+        <button id="edit-graphic">Edit Last Elements</button>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="export-geojson">Export GeoJSON</button>
+        <button id="zoom-in">Zoom In</button>
+        <button id="zoom-out">Zoom Out</button>
+      </aside>
+
+      <div id="viewDiv"></div>
+
+      <aside id="tools2">
+        <details open>
+          <summary>Features</summary>
+          <div id="features-list"></div>
+        </details>
+
+        <details>
+          <summary>Attributes</summary>
+          <div id="attributes-panel"></div>
+        </details>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2025 Mohamed Ashraf. All rights reserved.</p>
+    </footer>
+
+    <script src="https://js.arcgis.com/4.29/"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
