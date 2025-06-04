@@ -29,19 +29,23 @@
         <h2>Draw</h2>
         <button id="draw-point">Draw Point</button>
         <button id="draw-polyline">Draw Line</button>
+        <div id="polygon-subtype">
+          <label for="subtype-select">Polygon Use:</label>
+          <select id="subtype-select">
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+            <option value="industrial">Industrial</option>
+            <option value="green">Green Area</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
         <button id="draw-polygon">Draw Polygon</button>
         <div id="color-picker">
           <label for="color-picker">Drawing Color:</label>
           <input type="color" id="color-picker" value="#ff0000" />
         </div>
-        <hr />
-            Coming Soon
-        <h2>Edit</h2>
-        <button id="edit-vertices">Edit Vertices</button>
-        <button id="split">Split</button>
-        <button id="merge">Merge</button>
-        <button id="explode">Explode</button>
-        <button id="trim">Trim</button>
+
         <hr />
 
         <h2>Tools</h2>
@@ -50,6 +54,8 @@
         <button id="undo">Undo</button>
         <button id="redo">Redo</button>
         <button id="export-geojson">Export GeoJSON</button>
+        <button id="export-table">Export as Table</button>
+
         <button id="zoom-in">Zoom In</button>
         <button id="zoom-out">Zoom Out</button>
       </aside>
